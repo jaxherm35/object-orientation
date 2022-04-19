@@ -191,15 +191,15 @@ var user = {
 */
 
 //Code here
-class Cat {
-  constructor(name, age, color){
-    this.name = name,
-    this.age = age,
-    this.color = color
-  }
-}
-let myCat = new Cat('The Cat', 7, 'Brown')
-console.log(myCat)
+// class Cat {
+//   constructor(name, age, color){
+//     this.name = name,
+//     this.age = age,
+//     this.color = color
+//   }
+// }
+// let myCat = new Cat('The Cat', 7, 'Brown')
+// console.log(myCat)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -210,7 +210,20 @@ console.log(myCat)
 */
 
 //Code here
+class Wizard {
+  constructor(name, age, favoriteSpell){
+    this.name = name,
+    this.age = age,
+    this.favoriteSpell = favoriteSpell
+  }
+    castSpell() {
+      console.log(`${this.name} has cast ${this.favoriteSpell}`)
+  }
+  }
 
+
+let Bellatrix = new Wizard('Bellatrix', '33', 'Crucious Curse')
+Bellatrix.castSpell()
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
