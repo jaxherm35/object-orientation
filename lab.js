@@ -38,6 +38,7 @@ console.log(dog.name)
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
+console.log(dog['color'])
 
 
 
@@ -48,13 +49,23 @@ console.log(dog.name)
 */
 
 //Code here
-
+let favoriteThings = {
+  band: 'Black Sabbath',
+  food: 'Chicken Fried Steak',
+  person: 'Myself',
+  book: 'Meditations',
+  movie: 'The Batman',
+  hoiday: 'Independance Day'
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
+favoriteThings['car'] = 'Corvette C8',
+favoriteThings['brand'] = 'Nike'
+
 
 
 /*
