@@ -5,10 +5,10 @@
 */
 
 //Code here
-let me = {
-  name: 'Jaxon',
-  age: '26'
-}
+// let me = {
+//   name: 'Jaxon',
+//   age: '26'
+// }
 
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
@@ -19,26 +19,26 @@ let me = {
 //and goodBoy/goodGirl (a boolean).
 
 //Code here
-let dog = {
-  name: 'Fido',
-  color: 'Black',
-  age: 3,
-  goodBoy: true
-}
+// let dog = {
+//   name: 'Fido',
+//   color: 'Black',
+//   age: 3,
+//   goodBoy: true
+// }
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
-console.log(dog.name)
+// console.log(dog.name)
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-console.log(dog['color'])
+// console.log(dog['color'])
 
 
 
@@ -49,22 +49,22 @@ console.log(dog['color'])
 */
 
 //Code here
-let favoriteThings = {
-  band: 'Black Sabbath',
-  food: 'Chicken Fried Steak',
-  person: 'Myself',
-  book: 'Meditations',
-  movie: 'The Batman',
-  hoiday: 'Independance Day'
-}
+// let favoriteThings = {
+//   band: 'Black Sabbath',
+//   food: 'Chicken Fried Steak',
+//   person: 'Randy',
+//   book: 'Meditations',
+//   movie: 'The Batman',
+//   hoiday: 'Independance Day'
+// }
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
-favoriteThings['car'] = 'Corvette C8',
-favoriteThings['brand'] = 'Nike'
+// favoriteThings['car'] = 'Corvette C8',
+// favoriteThings['brand'] = 'Nike'
 
 
 
@@ -74,25 +74,28 @@ favoriteThings['brand'] = 'Nike'
 */
 
 //Code here
-
-
+// favoriteThings.food = 'Chicken Nuggets',
+// favoriteThings.book = 'Harry Potter'
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
-var carDetails = {
-  color: 'red',
-  make: 'toyota',
-  model: 'tacoma',
-  year: 1994
-}
-// Do not edit the code above.
+// var carDetails = {
+//   color: 'red',
+//   make: 'toyota',
+//   model: 'tacoma',
+//   year: 1994
+// }
+// // Do not edit the code above.
 
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
 //Code Here
-
+// let {color: newColor} = carDetails
+// let {make: newMake} = carDetails
+// let {model: newModel} = carDetails
+// let {year: newYear} = carDetails
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -103,13 +106,15 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
-  //Code Here
-  
-  // Do not edit the code below.
-  return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
-  // Do not edit the code above.
-}
+// function greeting(obj) {
+//   //Code Here
+//   const {title, firstName, lastName} = obj
+//   // Do not edit the code below.
+//   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
+//   // Do not edit the code above.
+// }
+// console.log(`hello ${title} ${firstName} ${lastName} `)
+
 
 
 
@@ -124,7 +129,10 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+// function totalPopulation(states) {
+//   const {utah, california, texas, arizona} = states
+//   return utah + california + texas + arizona
+// }
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -138,7 +146,9 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+// function ingredients(obj) {
+//   const {carb, fat, protein} = obj
+// } let newIngredients = ingredients.carb; ingredients.fat; ingredients.protein
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -160,6 +170,8 @@ var user = {
 */
 
 //Code Here
+// user.name = 'Bryan G Smith'
+// user.email = 'bryan.smith@devmounta.in'
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
@@ -168,7 +180,8 @@ var user = {
 */
 
 //Code Here
-
+// delete user.age
+// console.log(user)
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -178,8 +191,15 @@ var user = {
 */
 
 //Code here
-
-
+class Cat {
+  constructor(name, age, color){
+    this.name = name,
+    this.age = age,
+    this.color = color
+  }
+}
+let myCat = new Cat('The Cat', 7, 'Brown')
+console.log(myCat)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
